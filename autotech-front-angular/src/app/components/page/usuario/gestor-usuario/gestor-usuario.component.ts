@@ -196,7 +196,7 @@ export class GestorUsuarioComponent implements OnInit, OnDestroy {
     else
       this.router.navigateByUrl(url);
   }
-
+// esto borra un usuario
   public deleteUser(idUser: number) {
     const currentUser = this.listUser.find((user: Usuario) => user.id_usuario == idUser);
     if (!currentUser) return;
